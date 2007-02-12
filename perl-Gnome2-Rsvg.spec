@@ -6,7 +6,7 @@
 %define		pdir	Gnome2
 %define		pnam	Rsvg
 Summary:	Perl librsvg bindings
-Summary(pl.UTF-8):   Wiązania librsvg dla Perla
+Summary(pl.UTF-8):	Wiązania librsvg dla Perla
 Name:		perl-Gnome2-Rsvg
 Version:	0.06
 Release:	1
