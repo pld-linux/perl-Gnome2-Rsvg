@@ -8,22 +8,25 @@
 Summary:	Perl librsvg bindings
 Summary(pl.UTF-8):	Wiązania librsvg dla Perla
 Name:		perl-Gnome2-Rsvg
-Version:	0.06
+Version:	0.10
 Release:	1
 License:	LGPL
 Group:		Development/Languages/Perl
 Source0:	http://dl.sourceforge.net/gtk2-perl/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	268eda3eb1745982ae84c840a2398c06
+# Source0-md5:	007b2c9510a3c97f4fce73d1b27372a0
 URL:		http://gtk2-perl.sourceforge.net/
-BuildRequires:	librsvg-devel >= 2.15.90
+BuildRequires:	librsvg-devel >= 2.16.0
+BuildRequires:	perl-Cairo >= 1.00
 BuildRequires:	perl-ExtUtils-Depends >= 0.205
 BuildRequires:	perl-ExtUtils-PkgConfig >= 1.07
-BuildRequires:	perl-Glib >= 1.132
-BuildRequires:	perl-Gtk2 >= 1.133
+BuildRequires:	perl-Glib >= 1.140
+BuildRequires:	perl-Gtk2 >= 1.140
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-Glib >= 1.132
-Requires:	perl-Gtk2 >= 1.133
+Requires:	librsvg >= 2.16.0
+Requires:	perl-Cairo >= 1.00
+Requires:	perl-Glib >= 1.140
+Requires:	perl-Gtk2 >= 1.140
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
