@@ -43,6 +43,7 @@ Ten moduł daje dostęp z poziomu Perla do biblioteki librsvg.
 	INSTALLDIRS=vendor
 
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
