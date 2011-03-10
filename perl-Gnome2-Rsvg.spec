@@ -8,12 +8,12 @@
 Summary:	Perl librsvg bindings
 Summary(pl.UTF-8):	Wiązania librsvg dla Perla
 Name:		perl-Gnome2-Rsvg
-Version:	0.10
+Version:	0.11
 Release:	1
-License:	LGPL
+License:	LGPL v2.1+
 Group:		Development/Languages/Perl
-Source0:	http://dl.sourceforge.net/gtk2-perl/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	007b2c9510a3c97f4fce73d1b27372a0
+Source0:	http://downloads.sourceforge.net/gtk2-perl/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	ea1a2560920d7f5f18735a2df373e552
 URL:		http://gtk2-perl.sourceforge.net/
 BuildRequires:	librsvg-devel >= 2.16.0
 BuildRequires:	perl-Cairo >= 1.00
@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/Gnome2/Rsvg/*.pod
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorarch}/Gnome2/Rsvg/*.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -65,6 +65,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/Gnome2/Rsvg
 %{perl_vendorarch}/Gnome2/Rsvg/Install
 %dir %{perl_vendorarch}/auto/Gnome2/Rsvg
-%attr(755,root,root) %{perl_vendorarch}/auto/Gnome2/Rsvg/*.so
-%{perl_vendorarch}/auto/Gnome2/Rsvg/*.bs
-%{_mandir}/man3/*
+%attr(755,root,root) %{perl_vendorarch}/auto/Gnome2/Rsvg/Rsvg.so
+%{perl_vendorarch}/auto/Gnome2/Rsvg/Rsvg.bs
+%{_mandir}/man3/Gnome2::Rsvg*.3pm*
