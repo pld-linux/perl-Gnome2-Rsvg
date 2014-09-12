@@ -66,5 +66,4 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Gnome2/Rsvg/Install
 %dir %{perl_vendorarch}/auto/Gnome2/Rsvg
 %attr(755,root,root) %{perl_vendorarch}/auto/Gnome2/Rsvg/Rsvg.so
-%{perl_vendorarch}/auto/Gnome2/Rsvg/Rsvg.bs
 %{_mandir}/man3/Gnome2::Rsvg*.3pm*
