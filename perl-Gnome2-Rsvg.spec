@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test" (requires X server)
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Gnome2
 %define		pnam	Rsvg
 Summary:	Perl librsvg bindings
