@@ -22,6 +22,7 @@ BuildRequires:	perl-Glib >= 1.140
 BuildRequires:	perl-Gtk2 >= 1.140
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 Requires:	librsvg >= 2.16.0
 Requires:	perl-Cairo >= 1.00
 Requires:	perl-Glib >= 1.140
