@@ -1,0 +1,10 @@
+--- Gnome2-Rsvg-0.12/rsvg2perl.h.orig	2020-09-27 03:49:03.000000000 +0200
++++ Gnome2-Rsvg-0.12/rsvg2perl.h	2021-06-19 17:20:13.789951046 +0200
+@@ -25,7 +25,6 @@
+ #include <gtk2perl.h>
+ 
+ #include <librsvg/rsvg.h>
+-#include <librsvg/librsvg-enum-types.h>
+ 
+ #if LIBRSVG_CHECK_VERSION (2, 14, 0)
+ # include <cairo-perl.h>
